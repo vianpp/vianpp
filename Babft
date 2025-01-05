@@ -1,0 +1,227 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "BABFT Script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Credit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "By ngasalal"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "AutoFarm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "AutoFarm"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "AutoFarmV1",
+	Callback = function()
+      		local function runMyScript()
+    -- Tambahkan kode yang ingin kamu jalankan di sini
+    Workspace.Gravity = 0
+function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/1000000,Enum.EasingStyle.Linear),
+{CFrame=a})tweenrach:Play()end;toTargetWait(CFrame.new(-50, 70, 0))
+wait()
+function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/150,Enum.EasingStyle.Linear),
+{CFrame=a})tweenrach:Play()end;toTargetWait(CFrame.new(-50, 70, 8700))
+wait(58)
+function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/1000000,Enum.EasingStyle.Linear),
+{CFrame=a})tweenrach:Play()end;toTargetWait(CFrame.new(-50, -340, 9500))
+wait()
+Workspace.Gravity = 200
+    wait(20) -- Tunggu 5 detik sebelum mengulang
+end
+
+while true do
+    runMyScript()
+end
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "AutoFarmV2",
+	Callback = function()
+ local function runMyScript()
+    -- Tambahkan kode yang ingin kamu jalankan di sini
+    Workspace.Gravity = 0
+function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/1000000,Enum.EasingStyle.Linear),
+{CFrame=a})tweenrach:Play()end;toTargetWait(CFrame.new(-50, 70, 0))
+wait()
+function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/150,Enum.EasingStyle.Linear),
+{CFrame=a})tweenrach:Play()end;toTargetWait(CFrame.new(-50, 70, 8700))
+wait(9)
+function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/1000000,Enum.EasingStyle.Linear),
+{CFrame=a})tweenrach:Play()end;toTargetWait(CFrame.new(-50, -340, 9500))
+wait()
+Workspace.Gravity = 200
+    wait(20) -- Tunggu 5 detik sebelum mengulang
+end
+
+while true do
+    runMyScript()
+end
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "1 Try Farm"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "1 Try FarmV1",
+	Callback = function()
+      		Workspace.Gravity = 0
+function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/1000000,Enum.EasingStyle.Linear),
+{CFrame=a})tweenrach:Play()end;toTargetWait(CFrame.new(-50, 70, 0))
+wait()
+function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/150,Enum.EasingStyle.Linear),
+{CFrame=a})tweenrach:Play()end;toTargetWait(CFrame.new(-50, 70, 8700))
+wait(58)
+function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/1000000,Enum.EasingStyle.Linear),
+{CFrame=a})tweenrach:Play()end;toTargetWait(CFrame.new(-50, -340, 9500))
+wait()
+Workspace.Gravity = 200
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "1 Try FarmV2",
+	Callback = function()
+      		Workspace.Gravity = 0
+function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/1000000,Enum.EasingStyle.Linear),
+{CFrame=a})tweenrach:Play()end;toTargetWait(CFrame.new(-50, 70, 0))
+wait()
+function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/150,Enum.EasingStyle.Linear),
+{CFrame=a})tweenrach:Play()end;toTargetWait(CFrame.new(-50, 70, 8700))
+wait(9)
+function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/1000000,Enum.EasingStyle.Linear),
+{CFrame=a})tweenrach:Play()end;toTargetWait(CFrame.new(-50, -340, 9500))
+wait()
+Workspace.Gravity = 200
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "LocalPlayer",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddTextbox({
+	Name = "WalkSpeed",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(S)
+		Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = S
+	end	  
+})
+
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
+
+Tab:AddTextbox({
+	Name = "JumpPower",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(J)
+		Game.Players.LocalPlayer.Character.Humanoid.JumpPower = J
+	end	  
+})
+
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
+
+Tab:AddTextbox({
+	Name = "Gravity",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(G)
+		Workspace.Gravity = G
+	end	  
+})
+
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
