@@ -1,0 +1,14 @@
+-- Membuat ScreenGui
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Membuat TextLabel
+local textLabel = Instance.new("TextLabel")
+textLabel.Parent = screenGui
+textLabel.Text = "Joko"
+textLabel.Size = UDim2.new(1, 0, 1, 0)  -- Membuat TextLabel memenuhi seluruh layar
+textLabel.Position = UDim2.new(0, 0, 0, 0)  -- Menempatkan di pojok kiri atas
+textLabel.TextSize = 100  -- Ukuran font
+textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)  -- Warna teks putih
+textLabel.BackgroundTransparency = 1  -- Membuat latar belakang transparan
+textLabel.TextScaled = true  -- Membuat teks menyesuaikan ukuran label
